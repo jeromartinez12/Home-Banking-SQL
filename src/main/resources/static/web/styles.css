@@ -1,0 +1,1364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    background-color: #101316;
+
+}
+
+.inMain {
+    width: 90%;
+    min-height: 100vh;
+    padding: 6px;
+    /* border-radius: 39px; */
+    background-color: #101316;
+    /* -webkit-box-shadow: 0 0 31px 0 #f2c398;
+    -moz-box-shadow: 0 0 31px 0 #f2c398;
+    box-shadow: 0 0 31px 0 #f2c398; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 6px;
+    margin-top: 8vh;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101316ea;
+}
+
+.logo {
+    width: 150px;
+}
+
+.btnSignIn {
+    border: none;
+    border-radius: 15px;
+    background: #f2c398;
+
+}
+
+.btnSignIn:hover {
+    border-radius: 15px;
+    color: #f2c398;
+    background-color: #101316;
+}
+
+.btnSignInClose {
+    color: #f2c398;
+    border: none;
+    border-radius: 15px;
+    background: #756b77;
+}
+
+.btnSignInClose:hover {
+    background-color: #756b776e;
+}
+
+.navBarLink li a {
+    color: #f2c39894;
+    font-size: 1rem;
+    font-weight: lighter;
+
+}
+
+.navBarLink li a:hover {
+    color: #f2c398;
+    font-weight: lighter;
+}
+
+.active {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #f2c398 !important;
+}
+
+.buttonNav {
+    background-color: #f2c398;
+}
+
+.modalSingIn {
+    background: rgba(242, 195, 152, 0.45);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(242, 195, 152, 0.225);
+    color: #101316;
+}
+
+.modalIndexSingIn form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6px;
+    margin: 6px;
+}
+
+.modalIndexSingIn form button {
+    width: 80px;
+    padding: 6px;
+    margin: 6px;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.divMainLeft {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.divMainRight {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* home */
+.welcome {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.homeIndex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 50vh;
+    justify-content: space-between;
+}
+
+.welcomeName {
+    color: #f2c398;
+    font-style: italic;
+    font-size: x-large;
+}
+
+.welcomeTime {
+    color: #f2c398;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background: rgba(242, 195, 152, 0.75);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(242, 195, 152, 0.375);
+    padding: 6px;
+}
+
+.dashboard1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.dashboard2 {
+    display: flex;
+    width: 50%;
+}
+
+.dashboardAccounts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: rgba(242, 195, 152, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(242, 195, 152, 0.15);
+    width: 100%;
+    height: 250px;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.dashboardAccount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 6px;
+    color: #101316;
+    padding: 6px;
+    background: rgba(242, 195, 152, 0.65);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(242, 195, 152, 0.325);
+    border-radius: 5%;
+
+}
+
+.dashboardCards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dashboardCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 6px;
+    color: #101316;
+    padding: 6px;
+    background: rgba(242, 195, 152, 0.65);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(242, 195, 152, 0.325);
+    border-radius: 5%;
+}
+
+.linkColor {
+    margin: 6px;
+    color: #101316;
+    font-size: small;
+}
+
+.linkColor:hover {
+    color: #101316a2;
+}
+
+
+.dashboardCards {
+    display: flex;
+    background: rgba(242, 195, 152, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(242, 195, 152, 0.15);
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.dashboardTransfers {
+    display: flex;
+    background: rgba(242, 195, 152, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(242, 195, 152, 0.15);
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.tableCoins {
+    margin-top: 1vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableCoins table {
+    width: 75%;
+}
+
+.dashboardLoans {
+    display: flex;
+    background: rgba(242, 195, 152, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(242, 195, 152, 0.15);
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-bottom: 6px;
+}
+
+.divAccounts {
+    width: 100%;
+}
+
+.containerAccounts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerCards {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardAccounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 6px;
+    width: 20%;
+    height: 300px;
+    border-radius: 2%;
+    background: rgba(242, 195, 152, 0.35);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-bottom: 3px solid rgb(255, 1, 1);
+}
+
+.cardAccountsGreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 6px;
+    width: 20%;
+    height: 300px;
+    border-radius: 2%;
+    background: rgba(242, 195, 152, 0.35);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-bottom: 3px solid rgb(30, 238, 2);
+}
+
+.cardAccountsYellow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 6px;
+    width: 20%;
+    height: 300px;
+    border-radius: 2%;
+    background: rgba(242, 195, 152, 0.35);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-bottom: 3px solid rgb(238, 255, 0);
+}
+
+.cardAccountsYellow h5 {
+    color: #101316;
+
+}
+
+.cardAccountsYellow p {
+    color: #101316;
+    font-size: 1rem;
+}
+
+.cardAccounts h5 {
+    color: #101316;
+}
+
+.cardAccounts p {
+    color: #101316;
+    font-size: 1rem;
+}
+
+.cardAccountsGreen h5 {
+    color: #101316;
+}
+
+.cardAccountsGreen p {
+    color: #101316;
+    font-size: 1rem;
+}
+
+.accountDate {
+    color: #1013169c !important;
+}
+
+.yourAccounts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.yourAccounts h2 {
+    color: #f2c398;
+}
+
+.yourLoans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4vh;
+}
+
+.yourLoans h2 {
+    color: #f2c398;
+}
+
+
+.yourCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.yourCards h2 {
+    color: #f2c398;
+}
+
+.containerCards h4 {
+    color: #f2c398;
+}
+
+.divCreateNewCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+.createNewCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.createNewCard h2 {
+    color: #f2c398;
+}
+
+.containerCreateCard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.createCard {
+    display: flex;
+    padding: 6px;
+    background-color: #f2c398;
+    color: #101316;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 500px;
+    border-radius: 2%;
+}
+
+.btnCreateCard {
+    border: none;
+    border-radius: 15px;
+    background: #101316;
+    color: #f2c398;
+}
+
+
+.btnCreateCard:hover {
+    border-radius: 15px;
+    color: #101316;
+    background-color: #1013166c;
+}
+
+
+.divTableMovements {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+
+.transfer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+
+}
+
+.btnTransfer {
+    border: none;
+    border-radius: 15px;
+    color: #101316;
+    background: #f2c398;
+
+}
+
+.btnTransfer:hover {
+    border-radius: 15px;
+    color: #101316;
+    background-color: #f2c39870;
+}
+
+.transfer span input {
+    width: 50%;
+    border: none;
+
+
+}
+
+.transfer label {
+    background-color: #f2c398;
+    color: #101316;
+    margin: 2px;
+    border: none;
+}
+
+.formTransfer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.firstContainer h2 {
+    color: #f2c39894;
+}
+
+.spanControl {
+    font-weight: bolder;
+    color: #f2c398;
+}
+
+.pTextFirstContainer {
+    color: #f2c39894;
+}
+
+.savingMoney {
+    color: #f2c39894 !important;
+}
+
+.divSignUp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.divLogOut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.divLogOut p {
+    color: #f2c398;
+    margin: 10px;
+}
+
+
+.formSignUp {
+    color: #101316;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    width: 50%;
+    padding: 6px;
+    border-radius: 50px;
+    background: rgba(242, 195, 152, 0.45);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(242, 195, 152, 0.225);
+
+}
+
+.formSignUp input {
+    width: 60%;
+    text-align: center;
+    margin: 6px;
+    border: none;
+    color: #101316 !important;
+    /* border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #6A2578; */
+    border-radius: 39px;
+    background: #f2c398;
+}
+
+.containerTransfer {
+    width: 40%;
+}
+
+.tableTransaction {
+    padding: 6px;
+    margin: 6px;
+    border: none;
+    color: #101316;
+    font-size: 1rem;
+    border-radius: 2%;
+    background: rgba(242, 195, 152, 0.35);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.tableMovements {
+    width: 90%;
+}
+
+.thMovements {
+    color: #f2c398c5;
+    font-size: 1rem;
+}
+
+.tableTransaction td {
+    border: none;
+}
+
+.register {
+    font-weight: bold;
+}
+
+.imageBankRightContainer {
+    display: flex;
+    align-items: flex-end;
+    height: 550px;
+    width: 550px;
+    filter: drop-shadow(0px 0px 10px #f2c398);
+    -webkit-filter: drop-shadow(0px 0px 10px #f2c398);
+    -moz-filter: drop-shadow(0px 0px 10px #f2c398);
+
+}
+
+.pDownImage {
+    color: #D64161 !important;
+}
+
+.divBottomIndex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+    width: 100%;
+}
+
+
+.containerDivIcons {
+    display: flex;
+    margin-top: 1vh;
+    width: 90%;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.solutions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.solutions h3 {
+    color: #f2c398;
+    text-decoration: underline;
+}
+
+.divIcons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divMainCards {
+    display: flex;
+    align-items: center;
+    margin-top: 8vh;
+    padding: 6px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.cardIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #f2c3981a;
+    width: 130px;
+    height: 130px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
+.cardIndex:hover {
+    background-color: #f2c3989c;
+    -webkit-box-shadow: 0 0 18px 1px #f2c3989c;
+    -moz-box-shadow: 0 0 18px 1px #f2c3989c;
+    box-shadow: 0 0 18px 1px #f2c3989c;
+}
+
+
+.cardIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconIndex {
+    width: 70%;
+    height: 70%;
+}
+
+.imgCardMain {
+    width: 150px;
+    height: 150px;
+}
+
+.creditCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.debitCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.boxCards {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cards */
+.silverCard {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 350px;
+    height: 212px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #ffffff;
+    box-shadow:
+        2px 2px 0.5em rgba(122, 98, 55, 0.55);
+    background:
+        -moz-linear-gradient(-72deg,
+            #dedede,
+            #ffffff 16%,
+            #dedede 21%,
+            #ffffff 24%,
+            #454545 27%,
+            #dedede 36%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #dedede 72%,
+            #ffffff 80%,
+            #dedede 84%,
+            #a1a1a1);
+    background:
+        -webkit-linear-gradient(-72deg,
+            #dedede,
+            #ffffff 16%,
+            #dedede 21%,
+            #ffffff 24%,
+            #454545 27%,
+            #dedede 36%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #dedede 72%,
+            #ffffff 80%,
+            #dedede 84%,
+            #a1a1a1);
+    background:
+        -o-linear-gradient(-72deg,
+            #dedede,
+            #ffffff 16%,
+            #dedede 21%,
+            #ffffff 24%,
+            #454545 27%,
+            #dedede 36%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #dedede 72%,
+            #ffffff 80%,
+            #dedede 84%,
+            #a1a1a1);
+    background:
+        linear-gradient(-72deg,
+            #dedede,
+            #ffffff 16%,
+            #dedede 21%,
+            #ffffff 24%,
+            #454545 27%,
+            #dedede 36%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #dedede 72%,
+            #ffffff 80%,
+            #dedede 84%,
+            #a1a1a1);
+}
+
+.goldCard {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 350px;
+    height: 212px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #ffffff;
+    box-shadow:
+        2px 2px 0.5em rgba(122, 98, 55, 0.55);
+    background:
+        -moz-linear-gradient(-72deg,
+            #ffc373,
+            #ffffff 16%,
+            #ffc373 21%,
+            #ffffff 24%,
+            #a17434 27%,
+            #ffc373 36%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #ffc373 72%,
+            #ffffff 80%,
+            #ffc373 84%,
+            #a17434);
+    background:
+        -webkit-linear-gradient(-72deg,
+            #ffc373,
+            #ffffff 16%,
+            #ffc373 21%,
+            #ffffff 24%,
+            #a17434 27%,
+            #ffc373 36%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #ffc373 72%,
+            #ffffff 80%,
+            #ffc373 84%,
+            #a17434);
+    background:
+        -o-linear-gradient(-72deg,
+            #ffc373,
+            #ffffff 16%,
+            #ffc373 21%,
+            #ffffff 24%,
+            #a17434 27%,
+            #ffc373 36%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #ffc373 72%,
+            #ffffff 80%,
+            #ffc373 84%,
+            #a17434);
+    background:
+        linear-gradient(-72deg,
+            #ffc373,
+            #ffffff 16%,
+            #ffc373 21%,
+            #ffffff 24%,
+            #a17434 27%,
+            #ffc373 36%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #ffc373 72%,
+            #ffffff 80%,
+            #ffc373 84%,
+            #a17434);
+}
+
+.titaniumCard {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 350px;
+    height: 212px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #ffffff;
+    box-shadow:
+        2px 2px 0.5em rgba(122, 98, 55, 0.55);
+    background:
+        -moz-linear-gradient(-72deg,
+            #dedede,
+            #ffffff 16%,
+            #dedede 21%,
+            #ffffff 24%,
+            #caa1de 27%,
+            #dea1ca 30%,
+            #dedede 38%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #dedede 72%,
+            #ffffff 80%,
+            #dedede 84%,
+            #caa1de 93%,
+            #dea1ca);
+    background:
+        -webkit-linear-gradient(-72deg,
+            #dedede,
+            #ffffff 16%,
+            #dedede 21%,
+            #ffffff 24%,
+            #caa1de 27%,
+            #dea1ca 30%,
+            #dedede 38%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #dedede 72%,
+            #ffffff 80%,
+            #dedede 84%,
+            #caa1de 93%,
+            #dea1ca);
+    background:
+        -o-linear-gradient(-72deg,
+            #dedede,
+            #ffffff 16%,
+            #dedede 21%,
+            #ffffff 24%,
+            #caa1de 27%,
+            #dea1ca 30%,
+            #dedede 38%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #dedede 72%,
+            #ffffff 80%,
+            #dedede 84%,
+            #caa1de 93%,
+            #dea1ca);
+    background:
+        linear-gradient(-72deg,
+            #dedede,
+            #ffffff 16%,
+            #dedede 21%,
+            #ffffff 24%,
+            #caa1de 27%,
+            #dea1ca 30%,
+            #dedede 38%,
+            #ffffff 45%,
+            #ffffff 60%,
+            #dedede 72%,
+            #ffffff 80%,
+            #dedede 84%,
+            #caa1de 93%,
+            #dea1ca);
+}
+
+.cardCompany {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    background-size: 10px 10px;
+}
+
+.cardCompany img {
+    width: 35px;
+    height: 35px;
+}
+
+.cardNumber,
+.cardExpire,
+.cardHolder {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 24px;
+    color: #f2c398;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.digitGroup {
+    margin: 5px;
+}
+
+.cardExpire,
+.cardHolder {
+    font-size: 16px;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.cardText {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #000;
+    color: rgba(0, 0, 40, 0.5);
+    text-shadow: none;
+    margin: 3px;
+    margin-left: 10px;
+}
+
+.cardType {
+    font-size: 14px;
+    text-align: end;
+    margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+    .inMain {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .homeIndex {
+        flex-direction: column;
+    }
+
+    .divMainLeft {
+        width: 100%;
+    }
+
+    .divMainRight {
+        width: 100%;
+    }
+
+    .firstContainer {
+        width: 100%;
+    }
+
+    .formSignUp {
+        width: 100%;
+    }
+
+    .imageBankRightContainer {
+        height: 150px;
+        width: 150px;
+    }
+
+    .divMainCards {
+        flex-direction: column;
+        margin: 6px;
+        padding: 6px;
+    }
+
+    .containerAccounts {
+        flex-direction: column;
+    }
+
+    .containerCards {
+        width: 100%;
+    }
+
+    .yourAccounts {
+        width: 100%;
+    }
+
+    .textAccounts {
+        width: 90%
+    }
+
+    .cardAccounts {
+        width: 90%;
+    }
+
+    .cardAccountsGreen {
+        width: 90%;
+    }
+
+    .cardAccountsYellow {
+        width: 90%;
+    }
+
+    .divTableMovements {
+        width: 100%;
+    }
+
+    .tableMovements {
+        width: 100%;
+    }
+
+    .tableTransaction {
+        width: 80%;
+        font-size: .8rem;
+    }
+
+    .boxCards {
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .divCreateNewCard {
+        width: 90%;
+    }
+
+    .createCard {
+        width: 90%;
+    }
+
+    .containerTransfer {
+        width: 100%;
+    }
+
+    .transfer {
+        width: 100%;
+    }
+
+    .cardTextContainer {
+        width: 90%;
+    }
+
+    .goldCard,
+    .silverCard,
+    .titaniumCard {
+        width: 300px;
+
+    }
+
+    .dashboard {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .dashboard1 {
+        width: 100%;
+    }
+
+    .dashboard2 {
+        width: 100%;
+    }
+
+    .dashboardAccounts {
+        width: 90%;
+    }
+
+    .dashboardCards {
+        width: 90%;
+    }
+
+    .dashboardLoans {
+        width: 90%;
+    }
+
+    .dashboardTransfer {
+        width: 90%;
+    }
+
+    .divBottomIndex img {
+        width: 300px;
+    }
+
+    .divIcons {
+        flex-direction: column;
+    }
+
+    .divMainCards {
+        margin-top: 4vh;
+    }
+
+    .cardIndex {
+        margin-top: 4vh;
+    }
+
+    .noMostrar {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .imageBankRightContainer {
+        height: 300px;
+        width: 300px;
+    }
+
+    .formSignUp {
+        width: 100%;
+    }
+
+    .cardAccounts {
+        width: 30%;
+    }
+
+    .cardAccountsGreen {
+        width: 30%;
+    }
+
+    .cardAccountsYellow {
+        width: 30%;
+    }
+
+    .textAccounts {
+        width: 30%
+    }
+
+    .boxCards {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .divCreateNewCard {
+        width: 90%;
+    }
+
+    .createNewCard {
+        width: 80%;
+    }
+
+    .createCard {
+        width: 70%;
+    }
+
+    .formTransfer {
+        width: 90%;
+    }
+
+    .transfer {
+        width: 100%;
+    }
+
+    .containerTransfer {
+        width: 50%;
+    }
+
+    .transfer {
+        width: 100%;
+    }
+
+    .dashboard1 {
+        width: 100%;
+    }
+
+    .dashboard2 {
+        width: 100%;
+    }
+
+    .dashboardAccounts {
+        width: 90%;
+    }
+
+    .dashboardCards {
+        width: 90%;
+    }
+
+    .dashboardLoans {
+        width: 90%;
+    }
+
+    .dashboardTransfer {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .formSignUp {
+        width: 60%;
+    }
+
+    .boxCards {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .cardAccounts {
+        width: 20%;
+    }
+
+    .cardAccountsGreen {
+        width: 20%;
+    }
+
+    .cardAccountsYellow {
+        width: 20%;
+    }
+
+    .createCard {
+        width: 40%;
+    }
+
+    .imageBankRightContainer {
+        height: 450px;
+        width: 450px;
+    }
+}
