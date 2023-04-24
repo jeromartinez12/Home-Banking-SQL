@@ -1,0 +1,3 @@
+# Home-Banking-SQL
+
+My first project as a Full Stack Developer was the creation of a Home Banking application based on the Model-View-Controller (MVC) pattern. The application has several key functions including user registration and login, creation of bank accounts, savings accounts and checking accounts, request for virtual cards and loans. To accomplish this project, I used Vue.js for the front-end and Java for the back-end, thus ensuring complete functionality of the application across all layers. Through this project, I was able to demonstrate my technical and creative skills in creating high-quality applications.
